@@ -1,0 +1,209 @@
+/*
+$box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+$light-blue: #99CCFF;
+$mid-blue: #6b8eb2;
+$mid-gray: #5b5b5b;
+$light-mid-gray: #7b7b7b;
+$dark-gray: #3d3d3d;
+$text-gray: #666666;
+$light-gray: #E5E5E5;
+$orange: #D75404;
+$mid-orange: #a54003;
+$dark-orange: #8c3703;
+$red: rgba(255,104,115,1);
+*/
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    color: #666666;
+    background: #E5E5E5;
+}
+
+.spacer-8 {
+    height: 8px;
+}
+
+.spacer-16 {
+    height: 16px;
+}
+
+.spacer-32 {
+    height: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: #99CCFF;
+}
+
+button {
+    height: 30px;
+    font-size: 14px;
+    border: 2px solid #6b8eb2;
+    border-radius: 3px;
+    background-color: #6b8eb2;
+    color: white;
+    transition: background-color .5s, border-color .5s;
+}
+
+button:hover {
+    border-color: #476889;
+    background-color: #476889;
+}
+
+#menu-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 3em;
+    background-color: #6b8eb2;
+    text-align: right;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    display: block;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+}
+
+.menu-btn {
+    display: inline-block;
+    width: 5em; /* each menu item block will be this width */
+    text-align: center;
+    height: 100%;
+    line-height: 3em; /* set to same height as ul so it is vertically centered */   
+}
+
+.menu-link {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-link:hover {
+    opacity: 0.5;
+}
+
+#logo {
+    float: left;
+}
+
+#left-sidebar {
+    position: absolute;
+    left: 0;
+    width: 25%;
+    height: 100%;
+
+    padding-top: 4em;
+    overflow: scroll;
+
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+}
+
+#left-sidebar #id-card {
+    position: relative;
+    display: inline-block;
+    left: 0;
+    top: 0;
+
+    border: 2px solid #7b7b7b;
+    border-radius: 5px;
+    margin: 2px;
+    width: 90%;
+
+    text-align: center;
+    background-color: #7b7b7b;
+    color: white;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+}
+
+#left-sidebar #id-card:after {
+    padding-top: 10%;
+    /* 3:2.5; ratio */
+    display: block;
+    content: '';
+}
+
+#left-sidebar #id-card h3 {
+    font-size: 4vw;
+}
+
+.sidebar-section {
+    text-align: left;
+    padding-left: 1em;
+}
+
+.sidebar-section ul {
+    list-style-type: none;
+}
+
+#main-section {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+
+    padding-top: 4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    height: 200px;
+    overflow: scroll;
+
+    padding: 1em;
+
+    background-color: white;
+    margin: 2px;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+}
+
+.project-name {
+    margin: auto;
+}
+
+.add-card {
+    text-align: center;
+}
+
+.add-card .plus {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 100px;
+}
+
+.repo-list, .vm-list {
+    list-style-type: none;
+}
+
+input {
+    border: none;
+    height: 2em;
+    line-height: 2.5em;
+    font: inherit;
+    border-bottom: 1px solid #666666;
+    width: 50%;
+    padding: 0;
+    background: none;
+}
+
+#right-sidebar {
+    left: 75%;
+    width: 25%;
+    height: 100%;
+    position: absolute;
+
+    padding-top: 4em;
+
+    background-color: white;
+}
+
+.panel-label {
+    font-weight: bold;
+}
