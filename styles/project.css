@@ -1,0 +1,21 @@
+#project-section {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+
+    padding-top: 4em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    
+    background-color: white;
+    border: 1px solid #666666;
+}
+
+.cd-panel-container {
+    top: 3em;
+    padding-top: 0;
+    z-index: 900;
+    box-shadow: none;
+}

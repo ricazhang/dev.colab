@@ -4,26 +4,107 @@
         <meta charset="UTF-8" />
         <title>Colab Dashboard | Project Name</title>
         <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/slidepanel.css"/>
+        <link rel="stylesheet" href="styles/project.css" />
     </head>
 
     <body>
-    	<h2>Project Name</h2>
-    	<div id="project-info">
-    		<p>Created On: </p>
-    	</div>
-    	<div id="repo-section">
-    		<ul>
-    			<li></li>
-    		</ul>
-    	</div><!-- end repo-section -->
+        <header>
+            <nav>
+                <ul id="menu-container">
+                    <li class="menu-btn" id="logo"><a href="dashboard.html" class="menu-link" id="nav-home">Colab Dashboard</a></li>
+                    <li class="menu-btn"><a href="" class="menu-link">Account</a></li>
+                    <li class="menu-btn"><a href="" class="menu-link">Sign Out</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="left-sidebar">
+            <div id="id-card">
+                <h3>netid</h3>
+            </div><!-- end id card -->
+            <div id="left-sidebar-section-container">
+                <div class="sidebar-section">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li>Project 1</li>
+                    </ul>
+                </div><!-- end projects -->
+                <div class="sidebar-section">
+                    <h3>Repos</h3>
+                    <ul>
+                        <li>Repo 1</li>
+                        <li>Repo 2</li>
+                    </ul>
+                </div><!-- end repos -->
+                <div class="sidebar-section">
+                    <h3>VMs</h3>
+                    <ul>
+                        <li>VM 1</li>
+                        <li>VM 2</li>
+                    </ul>
+                </div><!-- end VMs -->
+                <div class="sidebar-section" id="resources-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li>Tutorials</li>
+                        <li>Office Hours</li>
+                    </ul>
+                </div><!-- end resources -->
+            </div><!-- end left-sidebar-section-container -->
+        </div><!-- end left sidebar -->
+        
+    	<div id="project-section">
+            <h2>Project Name</h2>
+            <div id="project-info">
+                <p>Created On: </p>
+            </div>
+            <div id="repo-section">
+                <ul>
+                    <li></li>
+                </ul>
+            </div><!-- end repo-section -->
+    
+            <div id="app-section">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="add-card">
+                    +
+            </div>
+        </div><!-- end project-section -->
+        
+        <div class="from-right is-visible">
+            <div class="cd-panel-container">
+                <div class="cd-panel-content">
+                    <div id="team-list">
+                        <h3>Team Name</h3>
+                        Team Members
+                        <ul>
+                            <li>Christina</li>
+                            <li>Tracy</li>
+                            <li><input id="add-team-member" placeholder="Add team or team member"></li>
+                        </ul>
+                    </div><!-- team-list-->
 
-    	<div id="app-section">
-    		<ul>
-    			<li></li>
-    		</ul>
-    	</div>
-    	<div class="add-card">
-        		+
-    	</div>
+                    <div class="spacer-32"></div>
+
+                    <div id="api-keys">
+                        <div id="api-list"><span class="panel-label">API Key:</span> aoais3092dsafklm2sakldf1</div>
+                        <div class="spacer-8"></div>
+                        <div><button>Get New API Key</button></div>
+                    </div><!-- end api-keys -->
+
+                    <div class="spacer-32"></div>
+
+                    <div id="vm-section">
+                        <div id="vm-list"><span class="panel-label">VM:</span> colab-sbx-218.oit.duke.edu</div>
+                        <div class="spacer-8"></div>
+                        <div><button href="https://vm-manage.oit.duke.edu/">Get New VM</button></div>
+                    </div><!-- end vm-section -->
+                </div> <!-- end cd-panel-content -->
+            </div> <!-- end cd-panel-container -->
+        </div> <!-- end cd-panel -->
     </body>
 </html>
