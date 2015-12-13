@@ -12,9 +12,13 @@ $mid-orange: #a54003;
 $dark-orange: #8c3703;
 $red: rgba(255,104,115,1);
 */
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
+
 body {
     margin: 0;
-    font-family: Roboto, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #666666;
     background: #E5E5E5;
 }
@@ -148,7 +152,7 @@ button:hover {
 #main-section {
     position: absolute;
     left: 25%;
-    width: 50%;
+    width: 75%;
     height: 100%;
 
     padding-top: 3em;
@@ -175,7 +179,7 @@ button:hover {
     padding-right: 1em;
     height: 2.5em;
     line-height: 2.5em;
-    width: calc(100%-2em);
+    width: 100%;
     background-color:#89ba2c;
     color: white;
 }
@@ -189,7 +193,13 @@ button:hover {
 .edit-project-link {
     display: inline;
     line-height: 2.5em;
+    color: white;
 }
+
+.edit-project-link:hover {
+    color: #99CCFF;
+}
+
 
 .card-section {
     position: absolute;
