@@ -14,8 +14,9 @@ $(function() {
 		}
 	});
 
-	$('add-card').click(function() {
-		$('#main-section').append();
+	$('#add-card').click(function() {
+		console.log("click");
+		$('#first-project').clone().insertBefore('#add-card');
 	});
 	
 	// pretend this is the object you GET or POST from the API call
@@ -110,5 +111,5 @@ $(function() {
 				]
 			}
 		]
-	]};
+	};
 });
